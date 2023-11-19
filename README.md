@@ -16,3 +16,4 @@
 * Прсмотр фото с карточки
 
 ### Ссылка на проект:
+https://valery-vit021.github.io/mesto_new/
