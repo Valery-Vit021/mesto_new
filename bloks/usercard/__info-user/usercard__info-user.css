@@ -1,0 +1,16 @@
+.usercard__info-user{
+   padding-left: 30px;
+   display: grid;
+   grid-template-columns: repeat(2, max-content);
+   grid-template-rows: repeat(2, min-content);
+   gap: 16px 18px;
+   margin: auto;
+}
+
+@media screen and (max-width: 320px) {
+   .usercard__info-user{
+      gap: 10px 14px;
+      padding-left: 0;
+      margin: 32px auto 36px;
+   }
+}

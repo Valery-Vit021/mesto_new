@@ -1,0 +1,12 @@
+.usercard__profile{
+   max-width: calc(100% - 150px);
+   display: flex;
+   min-height: 120px;
+}
+
+@media screen and (max-width: 320px) {
+   .usercard__profile{
+      flex-direction: column;
+      max-width: 100%;
+   }
+}

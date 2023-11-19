@@ -1,0 +1,16 @@
+.usercard__like{
+   margin: auto 0;
+   border: 0;
+   padding: 0;
+   background-color: transparent;
+   background-image: url(../../../images/like-disable.svg);
+   min-width: 22px;
+   min-height: 19px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   cursor: pointer;
+}
+
+.usercard__like:hover{
+   opacity: 0.5;
+}

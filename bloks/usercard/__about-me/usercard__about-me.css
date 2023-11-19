@@ -1,0 +1,17 @@
+.usercard__about-me{
+   max-width: 513px;
+   font-size: 18px;
+   font-weight: 400;
+   margin: 0;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   overflow: hidden;
+}
+
+@media screen and (max-width: 320px) {
+   .usercard__about-me{
+      text-align: center;
+      font-size: 14px;
+      max-width: calc(282px - 32px);
+   }
+}

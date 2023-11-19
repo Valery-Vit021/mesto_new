@@ -1,0 +1,11 @@
+.usercard__header{
+   display: flex;
+   justify-content: space-between;
+}
+
+@media screen and (max-width: 320px) {
+   .usercard__header{
+      display: block;
+      padding-top: 38px;
+   }
+}

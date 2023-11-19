@@ -1,0 +1,12 @@
+.usercard{
+   width: 100%;
+   padding: 36px 0 67px;
+}
+
+@media screen and (max-width: 320px) {
+   .usercard{
+      display: block;
+      padding: 0 19px;
+      box-sizing: border-box;
+   }
+}

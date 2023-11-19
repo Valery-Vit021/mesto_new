@@ -1,0 +1,11 @@
+.usercard__avatar{
+   max-width: 120px;
+   max-height: 120px;
+   border-radius: 100px;
+}
+
+@media screen and (max-width: 320px) {
+   .usercard__avatar{
+      margin: 0 auto;
+   }
+}

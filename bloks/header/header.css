@@ -1,0 +1,12 @@
+.header{
+   width: 100%;
+   min-height: 74px;
+   border-bottom: rgba(84, 84, 84, 0.7) solid 0.5px;
+   display: flex;
+}
+
+@media screen and (max-width: 320px) {
+   .header{
+      display: block;
+   }   
+}

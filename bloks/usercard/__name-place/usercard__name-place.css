@@ -1,0 +1,8 @@
+.usercard__name-place{
+   max-width: 80%;
+   color: black;
+   margin: 0;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   overflow: hidden;
+}
