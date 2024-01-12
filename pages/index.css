@@ -16,6 +16,7 @@
 @import url(../bloks/usercard/__add-post-btn/usercard__add-post-btn.css);
 @import url(../bloks/usercard/__content/usercard__content.css);
 @import url(../bloks/usercard/__card/usercard__card.css);
+@import url(../bloks/usercard/__delete/usercard__delete.css);
 @import url(../bloks/usercard/__card-img/usercard__card-img.css);
 @import url(../bloks/usercard/__info-place/usercard__info-place.css);
 @import url(../bloks/usercard/__name-place/usercard__name-place.css);
@@ -31,3 +32,6 @@
 @import url(../bloks/popup/__form/popup__form.css);
 @import url(../bloks/popup/__input/popup__input.css);
 @import url(../bloks/popup/__add-btn/popup__add-btn.css);
+@import url(../bloks/popup/__body-img/popup__body-img.css);
+@import url(../bloks/popup/__name/popup__name.css);
+@import url(../bloks/popup/__img/popup_img.css);

@@ -25,63 +25,49 @@
             <button class="usercard__add-post-btn" type="button"></button>
          </section>
          <section class="usercard__content">
-            <div class="usercard__card">
-               <img class="usercard__card-img" src="images/karachaevsk.jpg" alt=" ">
-               <div class="usercard__info-place">
-                  <p class="usercard__name-place">Карачаевск</p>
-                  <button type="button" class="usercard__like"></button>
+            <template class="usercard__blank-card">
+               <div class="usercard__card">
+                  <button type="button" class="usercard__delete"></button>
+                  <img class="usercard__card-img" src="#" alt="#">
+                  <div class="usercard__info-place">
+                     <p class="usercard__name-place"></p>
+                     <button type="button" class="usercard__like"></button>
+                  </div>
                </div>
-            </div>
-            <div class="usercard__card">
-               <img class="usercard__card-img" src="images/albrus.png" alt=" ">
-               <div class="usercard__info-place">
-                  <p class="usercard__name-place">Гора Эльбрус</p>
-                  <button type="button" class="usercard__like"></button>
-               </div>
-            </div>
-            <div class="usercard__card">
-               <img class="usercard__card-img" src="images/dombai.png" alt=" ">
-               <div class="usercard__info-place">
-                  <p class="usercard__name-place">Домбай</p>
-                  <button type="button" class="usercard__like"></button>
-               </div>
-            </div>
-            <div class="usercard__card">
-               <img class="usercard__card-img" src="images/karachaevsk.jpg" alt=" ">
-               <div class="usercard__info-place">
-                  <p class="usercard__name-place">Карачаевск</p>
-                  <button type="button" class="usercard__like"></button>
-               </div>
-            </div>
-            <div class="usercard__card">
-               <img class="usercard__card-img" src="images/albrus.png" alt=" ">
-               <div class="usercard__info-place">
-                  <p class="usercard__name-place">Гора Эльбрус</p>
-                  <button type="button" class="usercard__like"></button>
-               </div>
-            </div>
-            <div class="usercard__card">
-               <img class="usercard__card-img" src="images/dombai.png" alt=" ">
-               <div class="usercard__info-place">
-                  <p class="usercard__name-place">Домбай</p>
-                  <button type="button" class="usercard__like"></button>
-               </div>
-            </div>
+            </template>
          </section>
       </main>
       <footer class="footer">
          <p class="footer__copyright">© 2023 Mesto Russia</p>
       </footer>
    </div>
-   <div class="popup " id="edit-profile" >
+   <div class="popup" id="edit-profile" >
       <div class="popup__body">
-         <button class="popup__close-btn" type="button"> </button>
+         <button class="popup__close-btn popup__close-edit-btn" type="button"> </button>
          <h2 class="popup__title">Редактировать профиль</h2>
          <form class="popup__form" name="edit-profile">
             <input class="popup__input popup__input_profile_name" type="text" name="name" required placeholder="Имя" value="Жак-Ив Кусто">
             <input class="popup__input popup__input_profile_about" type="text" name="about" required placeholder="Немного о себе" value="Исследователь океана">
             <button class="popup__add-btn" type="submit">Сохранить</button>
          </form>
+      </div>
+   </div>
+   <div class="popup" id="add-card-place" >
+      <div class="popup__body">
+         <button class="popup__close-btn popup__close-add-btn" type="button"> </button>
+         <h2 class="popup__title">Новое место</h2>
+         <form class="popup__form" name="add-card-place">
+            <input class="popup__input popup__input_place_name" type="text" name="name-place" required placeholder="Название" value="">
+            <input class="popup__input popup__input_place_link-imge" type="text" name="link-img-place" required placeholder="Ссылка на картинку" value="">
+            <button class="popup__add-btn" type="submit">Создать</button>
+         </form>
+      </div>
+   </div>
+   <div class="popup" id="add-img-place" >
+      <div class="popup__body-img">
+         <button class="popup__close-btn popup__close-img-btn" type="button"> </button>
+         <img class="popup__img" alt="#" src="#">
+         <h2 class="popup__name">Новое место</h2>
       </div>
    </div>
    <script src="./index.js"></script>

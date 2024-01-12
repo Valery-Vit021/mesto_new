@@ -1,0 +1,19 @@
+.usercard__delete{
+   margin: 0;
+   padding: 0;
+   background-color: transparent;
+   background-image: url(../../../images/Trash.svg);
+   width: 18px;
+   height: 19px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: absolute;
+   right: 20px;
+   top: 20px;
+   cursor: pointer;
+   border: 0;
+}
+
+.usercard__delete:hover{
+   opacity: 0.5;
+}
