@@ -16,6 +16,8 @@
    opacity: 0.8;
 }
 
+
+
 @media screen and (max-width: 320px) {
    .popup__add-btn{
       margin-top: 15px;

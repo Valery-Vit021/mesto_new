@@ -15,7 +15,7 @@
       <main class="usercard">
          <section class="usercard__header">
             <div class="usercard__profile">
-               <img class="usercard__avatar" src="images/avatar.jpg">
+               <div class="usercard__avatar"></div>
                <div class="usercard__info-user">
                   <h1 class="usercard__name-user">Жак-Ив Кусто</h1>
                   <button class="usercard__edit-btn" type="button"></button>
@@ -45,9 +45,11 @@
       <div class="popup__body">
          <button class="popup__close-btn popup__close-edit-btn" type="button"> </button>
          <h2 class="popup__title">Редактировать профиль</h2>
-         <form class="popup__form" name="edit-profile">
-            <input class="popup__input popup__input_profile_name" type="text" name="name" required placeholder="Имя" value="Жак-Ив Кусто">
-            <input class="popup__input popup__input_profile_about" type="text" name="about" required placeholder="Немного о себе" value="Исследователь океана">
+         <form class="popup__form" name="edit-profile" novalidate>
+            <input class="popup__input popup__input_profile_name" id="name-user" type="text" name="name" required placeholder="Имя" value="Жак-Ив Кусто" minlength="2" maxlength="40">
+            <span class="popup__input-error name-user-error"></span>
+            <input class="popup__input popup__input_profile_about" id="about-user" type="text" name="about" required placeholder="Немного о себе" value="Исследователь океана" minlength="2" maxlength="200">
+            <span class="popup__input-error about-user-error"></span>
             <button class="popup__add-btn" type="submit">Сохранить</button>
          </form>
       </div>
@@ -56,9 +58,11 @@
       <div class="popup__body">
          <button class="popup__close-btn popup__close-add-btn" type="button"> </button>
          <h2 class="popup__title">Новое место</h2>
-         <form class="popup__form" name="add-card-place">
-            <input class="popup__input popup__input_place_name" type="text" name="name-place" required placeholder="Название" value="">
-            <input class="popup__input popup__input_place_link-imge" type="text" name="link-img-place" required placeholder="Ссылка на картинку" value="">
+         <form class="popup__form" name="add-card-place" novalidate>
+            <input class="popup__input popup__input_place_name" id="name-place" type="text" name="name-place" required placeholder="Название" value="" minlength="2" maxlength="30">
+            <span class="popup__input-error name-place-error"></span>
+            <input class="popup__input popup__input_place_link-imge" id="link-img-place" type="url" name="link-img-place" required placeholder="Ссылка на картинку" value="">
+            <span class="popup__input-error link-img-place-error"></span>
             <button class="popup__add-btn" type="submit">Создать</button>
          </form>
       </div>
@@ -70,6 +74,19 @@
          <h2 class="popup__name">Новое место</h2>
       </div>
    </div>
+   <div class="popup" id="edit-avatar" >
+      <div class="popup__body">
+         <button class="popup__close-btn popup__close-edit-avatar-btn" type="button"> </button>
+         <h2 class="popup__title">Обновить аватар</h2>
+         <form class="popup__form" name="edit-avatar" novalidate>
+            <input class="popup__input popup__input_avatar_link-imge" id="link-avatar" type="url" name="link-avatar" required placeholder="Ссылка на картинку" value="">
+            <span class="popup__input-error link-avatar-error"></span>
+            <button class="popup__add-btn" type="submit">Сохранить</button>
+         </form>
+      </div>
+   </div>
+   
+   <script src="./validate.js"></script>
    <script src="./index.js"></script>
 </body>
 </html>
